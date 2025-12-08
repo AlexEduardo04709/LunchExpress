@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Beta_Lunch.PedidoPage"
+             Title="Pedido">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <Label Text="Pedido en proceso"
+               FontSize="28"
+               HorizontalOptions="Center" />
+
+        <Label x:Name="EstadoLabel"
+               Text="Preparando tu pedido..."
+               FontSize="18"
+               HorizontalOptions="Center" />
+
+        <!-- Barra de progreso -->
+        <ProgressBar x:Name="OrderProgress"
+                     Progress="0"
+                     HeightRequest="20"
+                     HorizontalOptions="FillAndExpand" />
+
+        <Button x:Name="ContinueButton"
+                Text="Continuar"
+                IsEnabled="False"
+                HeightRequest="50"
+                Clicked="OnContinueClicked"/>
+    </VerticalStackLayout>
+
+</ContentPage>

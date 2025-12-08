@@ -1,0 +1,33 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Beta_Lunch.OrdenarPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label Text="Resumen del Pedido"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <!-- Lista -->
+            <VerticalStackLayout x:Name="ResumenList"
+                                 Spacing="12" />
+
+            <!-- Total -->
+            <Label x:Name="TotalLabel"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalOptions="End"/>
+
+            <Button Text="Finalizar Pedido"
+                    BackgroundColor="#2196F3"
+                    TextColor="White"
+                    HeightRequest="50"
+                    Clicked="OnFinishClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

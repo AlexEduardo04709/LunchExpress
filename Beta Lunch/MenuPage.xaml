@@ -1,37 +1,29 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Beta_Lunch.MenuPage"
-             Title="Menú">
-    <VerticalStackLayout Padding="20">
+             x:Class="Beta_Lunch.MenuPage">
 
-        <!-- Barra superior -->
-        <Grid ColumnDefinitions="40,*,40" Margin="0,0,0,10">
-            <Image Source="user_icon.png"
-                   HeightRequest="30"
-                   WidthRequest="30"
-                   Grid.Column="0"/>
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="10">
 
-            <Label Text="Menú"
-                   FontSize="28"
-                   HorizontalOptions="Center"
-                   Grid.Column="1"/>
+            <!-- Título -->
+            <Label Text="Menú" 
+                   FontSize="28" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
 
-        </Grid>
+            <!-- Lista generada desde C# -->
+            <VerticalStackLayout x:Name="FoodList"
+                                 Spacing="12">
+            </VerticalStackLayout>
 
-        <!-- Buscador -->
-        <SearchBar Placeholder="Search" />
+            <!-- Botón continuar -->
+            <Button Text="Continuar"
+                    Margin="0,20,0,0"
+                    BackgroundColor="#2196F3"
+                    TextColor="White"
+                    HeightRequest="50"
+                    Clicked="OnContinueClicked"/>
 
-        <!-- Grid de imágenes dentro de ScrollView -->
-        <ScrollView>
-            <Grid x:Name="FoodGrid"
-                  ColumnDefinitions="*,*"
-                  RowSpacing="20"
-                  ColumnSpacing="20"
-                  Padding="10">
-                <!-- Las imágenes se agregan en C# -->
-            </Grid>
-        </ScrollView>
-
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
