@@ -10,6 +10,6 @@ public partial class PedidoTerminadoPage : ContentPage
     private async void OnOkClicked(object sender, EventArgs e)
     {
         // Regresa al menú
-        await Navigation.PopToRootAsync();
+        await Navigation.PushAsync(new MenuPage());
     }
 }
