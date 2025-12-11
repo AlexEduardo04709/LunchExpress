@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Beta_Lunch.HistorialPage"
+    Title="Historial">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <Label Text="Historial de pedidos"
+               FontSize="28"
+               HorizontalOptions="Center" />
+
+        <Label Text="• Pedido 1: Entregado"
+               FontSize="18" />
+
+        <Label Text="• Pedido 2: En camino"
+               FontSize="18" />
+
+        <Label Text="• Pedido 3: Cancelado"
+               FontSize="18" />
+
+    </VerticalStackLayout>
+</ContentPage>

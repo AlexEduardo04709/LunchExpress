@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Beta_Lunch.LoginPage"
+             Title="Inicio de Sesión">
+    <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+
+        <Label Text="Inicio de Sesión"
+               FontSize="28"
+               HorizontalOptions="Center" />
+
+        <Entry x:Name="txtCorreo"
+               Placeholder="Correo@gmail.com"
+               Keyboard="Email" />
+
+        <Entry x:Name="txtPassword"
+               Placeholder="Contraseña"
+               IsPassword="True" />
+
+        <Button Text="Iniciar"
+                Clicked="BtnIniciar_Clicked"
+                HorizontalOptions="Center"
+                WidthRequest="150" />
+
+        <Button Text="Crear Cuenta"
+                Clicked="BtnIrCrear_Clicked"
+                BackgroundColor="Transparent"
+                TextColor="Blue" />
+
+    </VerticalStackLayout>
+</ContentPage>

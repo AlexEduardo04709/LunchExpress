@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Beta_Lunch.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Beta_Lunch"
+    Shell.FlyoutBehavior="Disabled">
+
+    <!-- LOGIN: NO aparece en pestañas, solo se usa como ruta -->
+    <ShellContent 
+        Route="LoginPage"
+        ContentTemplate="{DataTemplate local:LoginPage}" />
+
+    <TabBar>
+
+        <!-- Inicio -->
+        <ShellContent
+            Title="Inicio"
+            Route="HomePage"
+            ContentTemplate="{DataTemplate local:HomePage}" />
+
+        <!-- Menú -->
+        <ShellContent
+            Title="Menú"
+            Route="MenuPage"
+            ContentTemplate="{DataTemplate local:MenuPage}" />
+
+        <!-- Perfil -->
+        <ShellContent
+            Title="Perfil"
+            Route="PerfilPage"
+            ContentTemplate="{DataTemplate local:PerfilPage}" />
+
+        <!-- Historial -->
+        <ShellContent
+            Title="Historial"
+            Route="HistorialPage"
+            ContentTemplate="{DataTemplate local:HistorialPage}" />
+
+    </TabBar>
+
+    <!-- Flujo del pedido -->
+    <ShellContent 
+        Route="PedidoTerminadoPage"
+        ContentTemplate="{DataTemplate local:PedidoTerminadoPage}" />
+
+    <ShellContent 
+        Route="PedidoEnCaminoPage"
+        ContentTemplate="{DataTemplate local:PedidoEnCaminoPage}" />
+
+    <ShellContent 
+        Route="PedidoEntregadoPage"
+        ContentTemplate="{DataTemplate local:PedidoEntregadoPage}" />
+
+</Shell>

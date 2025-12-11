@@ -1,0 +1,29 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Beta_Lunch.MenuPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="10">
+
+            <!-- Título -->
+            <Label Text="Menú" 
+                   FontSize="28" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <!-- Lista generada -->
+            <VerticalStackLayout x:Name="FoodList"
+                                 Spacing="12">
+            </VerticalStackLayout>
+
+            <!-- Botón continuar -->
+            <Button Text="Continuar"
+                    Margin="0,20,0,0"
+                    BackgroundColor="#2196F3"
+                    TextColor="White"
+                    HeightRequest="50"
+                    Clicked="OnContinueClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
