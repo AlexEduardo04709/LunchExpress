@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Beta_Lunch.PedidoTerminadoPage"
-             Title="Pedido Listo">
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Beta_Lunch.PedidoTerminadoPage"
+    Title="Pedido Realizado">
 
-    <VerticalStackLayout Padding="20" Spacing="25" VerticalOptions="Center">
-
-        <Label Text="¡Pedido Listo!"
-               FontSize="32"
-               HorizontalOptions="Center" />
-
-        <Label Text="Tu pedido ha sido completado exitosamente."
-               FontSize="18"
-               HorizontalOptions="Center"
-               HorizontalTextAlignment="Center" />
-
-
-        <Button Text="OK"
-                HeightRequest="50"
-                FontSize="20"
-                Clicked="OnOkClicked" />
-
+    <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center" HorizontalOptions="Center">
+        <Label Text="¡Tu pedido ha sido realizado!" FontSize="28" FontAttributes="Bold" HorizontalOptions="Center"/>
+        <Button Text="Ver pedido en camino" FontSize="18" Clicked="OnIrEnCaminoClicked"/>
     </VerticalStackLayout>
 
 </ContentPage>

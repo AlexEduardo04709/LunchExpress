@@ -11,7 +11,7 @@
                    FontAttributes="Bold"
                    HorizontalOptions="Center"/>
 
-            <!-- Lista generada desde C# -->
+            <!-- Lista generada -->
             <VerticalStackLayout x:Name="FoodList"
                                  Spacing="12">
             </VerticalStackLayout>

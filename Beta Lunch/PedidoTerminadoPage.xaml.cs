@@ -7,9 +7,8 @@ public partial class PedidoTerminadoPage : ContentPage
         InitializeComponent();
     }
 
-    private async void OnOkClicked(object sender, EventArgs e)
+    private async void OnIrEnCaminoClicked(object sender, EventArgs e)
     {
-        // Regresa al menú
-        await Navigation.PushAsync(new MenuPage());
+        await Shell.Current.GoToAsync("PedidoEnCaminoPage");
     }
 }

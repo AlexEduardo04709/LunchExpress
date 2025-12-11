@@ -9,6 +9,6 @@ public partial class CrearCuentaPage : ContentPage
     private async void BtnCrear_Clicked(object sender, EventArgs e)
     {
         DisplayAlert("Cuenta", "Cuenta creada con éxito", "OK");
-        await Navigation.PushAsync(new MenuPage());
+        await Shell.Current.GoToAsync("//HomePage");
     }
 }

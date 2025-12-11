@@ -8,11 +8,9 @@ public partial class LoginPage : ContentPage
 	}
     private async void BtnIniciar_Clicked(object sender, EventArgs e)
     {
-        // Cambia toda la app a AppShell
         Application.Current.MainPage = new AppShell();
 
-        // Navega al menú como página raíz del shell
-        await Shell.Current.GoToAsync("//MenuPage");
+        await Shell.Current.GoToAsync("//HomePage");
     }
 
     private async void BtnIrCrear_Clicked(object sender, EventArgs e)

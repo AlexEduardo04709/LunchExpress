@@ -6,9 +6,39 @@
     xmlns:local="clr-namespace:Beta_Lunch"
     Shell.FlyoutBehavior="Disabled">
 
+    <!-- PANTALLA DE INICIO DESPUÉS DEL LOGIN -->
     <ShellContent
-        Title="Menu"
+        Title="Inicio"
+        ContentTemplate="{DataTemplate local:HomePage}"
+        Route="HomePage" />
+
+    <!-- MENÚ -->
+    <ShellContent
+        Title="Menú"
         ContentTemplate="{DataTemplate local:MenuPage}"
         Route="MenuPage" />
 
+    <!-- PERFIL -->
+    <ShellContent
+        Title="Perfil"
+        ContentTemplate="{DataTemplate local:PerfilPage}"
+        Route="PerfilPage" />
+
+    <!-- HISTORIAL -->
+    <ShellContent
+        Title="Historial"
+        ContentTemplate="{DataTemplate local:HistorialPage}"
+        Route="HistorialPage" />
+
+    <!-- FLUJO DEL PEDIDO -->
+    <ShellContent Route="PedidoTerminadoPage"
+                  ContentTemplate="{DataTemplate local:PedidoTerminadoPage}" />
+
+    <ShellContent Route="PedidoEnCaminoPage"
+                  ContentTemplate="{DataTemplate local:PedidoEnCaminoPage}" />
+
+    <ShellContent Route="PedidoEntregadoPage"
+                  ContentTemplate="{DataTemplate local:PedidoEntregadoPage}" />
+
 </Shell>
+
